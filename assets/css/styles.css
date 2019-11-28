@@ -1,0 +1,485 @@
+/*FUENTES*/
+@font-face{
+    font-family: 'bosch';
+    src: url('../font/GeosansLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*GENERALES*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, helvetica, arial;
+    text-decoration: none;
+}
+
+h1,
+h2, 
+li{
+    font-family: 'bosch';
+}
+
+input[type = 'button'], 
+input[type = 'submit'],
+button{
+    display: block;
+    border-radius: 2px;
+    width: 0 auto;
+    margin: 0 auto;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background: #005691;
+    border: 1px solid #005691;
+    cursor:pointer;
+}
+
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+/*CABECERA*/
+#header{
+    width: 100%;
+    height: auto;
+    background: transparent;
+    margin: 0px auto;
+}
+
+#rainbow img{
+    width: 100%;
+    height: 16px;
+}
+
+/*LOGOTIPO*/
+
+#logo h1{
+    font-family: 'bosch';
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding-right: 200px;
+    float: right;
+    font-size: 30px;
+}
+
+
+#logo img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 200px;
+    float: left;
+    height: 70px;
+}
+
+/*
+#logo a{
+    font-family: 'bosch';
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: gray;
+    text-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black;
+    transition: all 500ms;
+}
+*/
+
+#logo a:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 0px black, -1px 1px 0px black, -2px 2px 0px black;
+}
+
+/*MENU*/
+
+#menu{
+    clear: both;
+    width: 100%;
+    background: linear-gradient(to bottom, #f9f9f9 0px, #e9e9e9 100%);
+    height: 40px;
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#menu ul li{
+    float: left;
+    line-height: 40px;
+    border-right: 1px solid #d6f6f6;
+}
+
+#menu ul li a{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    color: gray;
+}
+
+
+/*CONTENEDOR*/
+
+#contenedor{
+    width: 95%;
+    min-height: auto;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*Formulario de monitoreo */
+
+#monitoreo{
+    width: 30%;
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#monitoreo input[type = 'submit']{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+#monitoreo input[type = 'date']{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#monitoreo input[type = 'number']{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#monitoreo label{
+    margin-left: 20px;
+}
+
+/*INTERFAZ */
+
+.interfaz{
+    width: 49%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #CCC;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.interfaz img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom right;
+}
+
+#info_main{
+    margin-top: 30px;
+    background: #9AA7D4;
+    min-height: 800px;
+}
+
+
+#administrador{
+    margin-left: 30px;
+    width: 45.5%;
+    min-height: 400px;
+    background: url('../img/administrador2.jpg');
+    float: left;
+}
+
+#administrador button{
+    margin-top: 50px;;
+
+}
+
+#asociado{
+    margin-right: 30px;
+    width: 45.5%;
+    min-height: 400px;
+    background: url('../img/asociado.jpg');
+    float: right;
+}
+
+#asociado button{
+    margin-top: 50px;;
+
+}
+
+/*Informacion del proyecto */
+
+#raspi{
+    margin-top: 30px;
+    background: url('../img/raspicam.jpg');
+    float: left;
+    min-height: 800px;
+}
+
+#info_rasp{
+    margin-top: 30px;
+    background: #9AA7D4;
+    min-height: 800px;
+}
+
+#info_rasp h1{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+#info_rasp h2{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+#info_rasp p{
+    font-family: 'bosch';
+    margin-left: 30px;
+}
+
+#info_rasp ul{
+    list-style: square;
+}
+
+#info_rasp ul li{
+    margin-left: 47px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#info_rasp button{
+    margin-top: 200px;
+    margin-right: 20px;
+}
+
+#imgref{
+    transform: rotate(180deg);
+    margin-top: 20px;
+    float: left;
+}
+
+#imgnew{
+    transform: rotate(180deg);
+    margin-top: 20px;
+    float: right;
+}
+
+#img_info{
+    background: #CCC;
+    width: 100%;
+    margin-top: 580px;
+    min-height: 620px;
+}
+
+#img_info h2{
+    font-family: 'bosch';
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#img_info img{
+    height: 500px;
+    width: 48%;
+    float: right;
+}
+
+#img_info p{
+    font-family: 'bosch';
+    width: 50%;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+#img_info2{
+    background: #CCC;
+    width: 100%;
+    margin-top: 30px;
+    min-height: 620px;
+}
+
+#img_info2 h2{
+    float: right;
+    font-family: 'bosch';
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+
+#img_info2 img{
+    margin-top: 40px;
+    height: 400px;
+    width: 48%;
+    float: left;
+}
+
+#img_info2 p{
+    font-family: 'bosch';
+    width: 49%;
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+#img_info2 button{
+    position: absolute;
+    bottom: -1260px;
+    right: 150px;
+    
+}
+
+.bloque_info{
+    width: 100%;
+    min-height: 1000px;
+    min-width: 600;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #CCC;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#bloque_info button{
+    position: absolute;
+    bottom: -460px;
+    right: 150px;
+    
+}
+
+#info_back img{
+    height: 360px;
+    width: 48%;
+    float: left;
+    clear:both;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#info_back h2{
+    float: right;
+    margin-right: 260px;
+    margin-top: 20px;
+}
+
+#info_back p{
+    font-family: 'bosch';
+    width: 45%;
+    float: right;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+#info_back2 img{
+    height: 400px;
+    width: 48%;
+    float: right;
+    clear:both;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#info_back2 p{
+    font-family: 'bosch';
+    width: 45%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+#formulario{
+    background: url('../img/bosch_building2.jpg');
+    min-height: 900px;
+}
+
+/*Barra buscador */
+
+#sidebar{
+    float: left;
+    color: black;
+    margin-right: 10px;
+    width: 23%;
+    min-height: 900px;
+}
+
+#sidebar h1{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#sidebar input[type = 'submit']{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#sidebar input[type = 'number']{
+    width: 85%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#sidebar label{
+    margin-left: 20px;
+}
+
+.bloque{
+    display:block;
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 35px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.3), 0px 3px 7px rgba(0,0,0,0.3), 0px 0px 1px #FFFFFF inset, 0px -3px 2px rgba(0,0,0,0.25) inset; 
+}
+
+/*PRINCIPAL*/
+#principal{
+    background: url('../img/bosch_building.jpg');
+    width: 100%;
+    min-height: 720px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #CCC;
+    overflow: hidden;
+}
+
+#principal h1{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+#principal h2{
+    font-family: 'bosch';
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/*PIE DE PAGINA*/
+#pie{
+    clear: both;
+    margin: 0px auto;
+    margin-top: 150px;
+}
+
+/*Tablas*/
+
+table{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+}
+
+td{
+    border-top: 1px solid #CCC;
+    padding: 2px;
+}
